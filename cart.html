@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>E-commerce</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/e-com.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/e-com.js"></script>
+        <script>
+        function myHide() {
+            console.log("Hidden");
+            $("#demo-alert").addClass("hidden");
+        }
+            
+        function myHide2() {
+            console.log("Hidden2");
+            $("#demo-alert2").addClass("hidden");
+        }
+            
+        $(document).ready(function() {
+            var addToCart = $(".addToCartButton");
+            var quantity = $(".quantity");
+            console.log(addToCart);
+            console.log(quantity);
+            addToCart.click(() => {
+                console.log("clicked");
+               $("#demo-alert").removeClass("hidden");
+              setTimeout(myHide, 1500);
+            });
+            
+            quantity.click(() => {
+                console.log("clicked");
+               $("#demo-alert2").removeClass("hidden");
+              setTimeout(myHide2, 1500);
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">E-Commerce</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li ><a href="e-commerce.html">Home</a></li>
+                <li class="active"><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="about us.html">About us</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+    <div class="container">
+        <h1>E-Commerce website</h1>
+        <p>These are your books added to your cart.</p>
+        <p> Feel free to chekout your chosen books and we hope to see you soon.</p>
+        <div id="Demo-BS">
+            <div class="alert alert-success hidden" id="demo-alert">
+                <a href="#" class="close" data-dismiss="alert">×</a>
+                <strong>Proceed to checkout</strong> in order to buy your chosen book.
+            </div>
+            <div class="alert alert-success hidden" id="demo-alert2">
+                <a href="#" class="close" data-dismiss="alert">×</a>
+                <strong>Quantity</strong> of that book increased by one.
+            </div>
+        </div>
+        <hr>
+        
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="item-details">
+                <img class="card-img-top" src="http://interactivejoe.com/book-viewer/assets/images/bk_4-small.jpg" alt="Card image cap">
+  <div class="card-body">
+<h3 class="book-item_title">Lord of the Flies</h3>
+                <p class="author">by William Golding &bull; 1954</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus nisi, eget pulvinar in, molestie et arcu.</p>
+    <a href="#" class="btn btn-primary addToCartButton">Acheter</a>
+      <a class="btn icon-btn btn-success quantity" href="#">
+<span class="glyphicon btn-glyphicon glyphicon-plus img-circle text-success"></span>
+Quantity
+</a>
+  </div>
+              </div>
+                            
+             </div>
+            
+            <div class="col-sm-3">
+                <div class="item-details">
+                <img class="card-img-top" src="http://interactivejoe.com/book-viewer/assets/images/bk_5-small.jpg" alt="Card image cap">
+<h3 class="book-item_title">The Great Gatsby</h3>
+                <p class="author">by F. Scott Fitzgerald &bull; 1925</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus nisi, eget pulvinar in, molestie et arcu.</p>
+                <a href="#" class="btn btn-primary addToCartButton">Acheter</a>
+                <a class="btn icon-btn btn-success quantity" href="#">
+<span class="glyphicon btn-glyphicon glyphicon-plus img-circle text-success"></span>
+Quantity
+</a>
+              </div>
+                             
+            </div>
+            
+            <div class="col-sm-3">
+ <div class="item-details">
+               <img class="card-img-top" src="http://interactivejoe.com/book-viewer/assets/images/bk_6-small.jpg" alt="Card image cap">
+<h3 class="book-item_title">Moby Dick</h3>
+                <p class="author">by Herman Melville &bull; 1851</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus nisi, eget pulvinar in, molestie et arcu.</p>
+                <a href="#" class="btn btn-primary addToCartButton">Acheter</a>
+    <a class="btn icon-btn btn-success quantity" href="#">
+<span class="glyphicon btn-glyphicon glyphicon-plus img-circle text-success"></span>
+Quantity
+</a>
+              </div>
+                             
+             </div>
+        
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="item-details">
+                <img class="card-img-top" src="http://interactivejoe.com/book-viewer/assets/images/bk_7-small.jpg" alt="Card image cap">
+  <div class="card-body">
+<h3 class="book-item_title">A Clockwork Orange</h3>
+                <p class="author">by Anthony Burgess &bull; 1962</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus nisi, eget pulvinar in, molestie et arcu.</p>
+    <a href="#" class="btn btn-primary addToCartButton">Acheter</a>
+      <a class="btn icon-btn btn-success quantity" href="#">
+<span class="glyphicon btn-glyphicon glyphicon-plus img-circle text-success"></span>
+Quantity
+</a>
+  </div>
+              </div>
+                            
+             </div>
+            
+            <div class="col-sm-3">
+                <div class="item-details">
+                <img class="card-img-top" src="http://interactivejoe.com/book-viewer/assets/images/bk_8-small.jpg" alt="Card image cap">
+                <h3 class="book-item_title">The Princess and the Pea</h3>
+                <p class="author">by Hans Christian Andersen &bull; 1835</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus nisi, eget pulvinar in, molestie et arcu.</p>
+                <a href="#" class="btn btn-primary addToCartButton">Acheter</a>
+                      <a class="btn icon-btn btn-success quantity" href="#">
+<span class="glyphicon btn-glyphicon glyphicon-plus img-circle text-success"></span>
+Quantity
+</a>
+              </div>
+                             
+            </div>
+            
+            <div class="col-sm-3">
+ <div class="item-details">
+               <img class="card-img-top" src="http://interactivejoe.com/book-viewer/assets/images/bk_9-small.jpg" alt="Card image cap">
+<h3 class="book-item_title">The Wonderful Wizard of Oz</h3>
+                <p class="author">by L. Frank Baum &bull; 1900</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus nisi, eget pulvinar in, molestie et arcu.</p>
+                <a href="#" class="btn btn-primary addToCartButton">Acheter</a>
+     <a class="btn icon-btn btn-success quantity" href="#">
+<span class="glyphicon btn-glyphicon glyphicon-plus img-circle text-success"></span>
+Quantity
+</a>
+                </div>
+                             
+             </div>
+        
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="item-details">
+                <img class="card-img-top" src="http://interactivejoe.com/book-viewer/assets/images/bk_10-small.jpg" alt="Card image cap">
+  <div class="card-body">
+                <h3 class="book-item_title">Mary Poppins</h3>
+                <p class="author">by P.L. Travers &bull; 1934</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus nisi, eget pulvinar in, molestie et arcu.</p>
+    <a href="#" class="btn btn-primary addToCartButton">Acheter</a>
+      <a class="btn icon-btn btn-success quantity" href="#">
+<span class="glyphicon btn-glyphicon glyphicon-plus img-circle text-success"></span>
+Quantity
+</a>
+  </div>
+              </div>
+                            
+             </div>
+            
+            <div class="col-sm-3">
+                <div class="item-details">
+                <img class="card-img-top" src="http://interactivejoe.com/book-viewer/assets/images/bk_11-small.jpg">
+                <h3 class="book-item_title">Beauty and the Beast</h3>
+                <p class="author">by Gabrielle-Suzanne Barbot de Villeneuve &bull; 1740</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus nisi, eget pulvinar in, molestie et arcu.</p>
+                <a href="#" class="btn btn-primary addToCartButton">Acheter</a>
+                    <a class="btn icon-btn btn-success quantity" href="#">
+<span class="glyphicon btn-glyphicon glyphicon-plus img-circle text-success"></span>
+Quantity
+</a>
+              </div>
+                             
+            </div>
+            
+            
+        
+        </div>
+        
+        
+    </div>
+       
+</body>
+
+</html>

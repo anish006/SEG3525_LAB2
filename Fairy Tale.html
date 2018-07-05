@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>E-commerce</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/e-com.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/e-com.js"></script>
+     <script>
+        function myHide() {
+            console.log("Hidden");
+            $("#demo-alert").addClass("hidden");
+        }
+        $(document).ready(function() {
+            var addToCart = $(".addToCartButton");
+            console.log(addToCart);
+            addToCart.click(() => {
+                console.log("clicked");
+               $("#demo-alert").removeClass("hidden");
+              setTimeout(myHide, 1500);
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">E-Commerce</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="about us.html">About us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Welcome to E-Commerce website</h1>
+        <p>This website will help you find books in your own interest.</p>
+        <p> Feel free to start purchasing new books and your favorite ones.</p>
+        <div id="Demo-BS">
+            <div class="alert alert-success hidden" id="demo-alert">
+                <a href="#" class="close" data-dismiss="alert">×</a>
+                <strong>Thanks for purchasing a book!</strong> Your chosen book has been sent to cart.
+            </div>
+        </div>
+        <input type="text" placeholder="Search a book..">
+        <hr>
+        
+        <div class="toolbar row">
+          <div class="filter-options small-12 medium-9 columns">
+            <a href="e-commerce.html" class="filter-item" data-group="all">All Categories</a>
+            <a href="Fantasy.html" class="filter-item" data-group="fantasy">Fantasy</a>
+            <a href="Sci-Fi.html" class="filter-item" data-group="sci-fi">Sci-Fi</a>
+            <a href="Classics.html" class="filter-item" data-group="classic">Classics</a>
+            <a href="Fairy Tale.html" class="filter-item active" data-group="fairy">Fairy Tale</a>
+            <a href="Young Adult.html" class="filter-item" data-group="young">Young Adult</a>
+          </div>         
+
+          <div class="small-12 medium-3 columns">
+            <select class="sort-options">
+            <option value="" disabled selected>Sort by</option>
+            <option value="" >Featured</option>
+            <option value="title">Alphabetical</option>
+            <option value="date-created">Published</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="row">
+                    
+            <div class="col-sm-3">
+                <div class="item-details">
+                <img class="card-img-top" src="http://interactivejoe.com/book-viewer/assets/images/bk_8-small.jpg" alt="Card image cap">
+                <h3 class="book-item_title">The Princess and the Pea</h3>
+                <p class="author">by Hans Christian Andersen &bull; 1835</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus nisi, eget pulvinar in, molestie et arcu.</p>
+                <a href="#" class="btn btn-primary addToCartButton">Ajouter au panier</a>
+              </div>
+                             
+            </div>
+            
+            <div class="col-sm-3">
+ <div class="item-details">
+               <img class="card-img-top" src="http://interactivejoe.com/book-viewer/assets/images/bk_9-small.jpg" alt="Card image cap">
+<h3 class="book-item_title">The Wonderful Wizard of Oz</h3>
+                <p class="author">by L. Frank Baum &bull; 1900</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus nisi, eget pulvinar in, molestie et arcu.</p>
+                <a href="#" class="btn btn-primary addToCartButton">Ajouter au panier</a>
+              </div>
+                             
+             </div>
+            
+             <div class="col-sm-3">
+                <div class="item-details">
+                <img class="card-img-top" src="http://interactivejoe.com/book-viewer/assets/images/bk_10-small.jpg" alt="Card image cap">
+  <div class="card-body">
+                <h3 class="book-item_title">Mary Poppins</h3>
+                <p class="author">by P.L. Travers &bull; 1934</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus nisi, eget pulvinar in, molestie et arcu.</p>
+    <a href="#" class="btn btn-primary addToCartButton">Ajouter au panier</a>
+  </div>
+              </div>
+                            
+             </div>
+        
+        </div>
+        
+        <div class="row">
+                      
+            <div class="col-sm-3">
+                <div class="item-details">
+                <img class="card-img-top" src="http://interactivejoe.com/book-viewer/assets/images/bk_11-small.jpg">
+                <h3 class="book-item_title">Beauty and the Beast</h3>
+                <p class="author">by Gabrielle-Suzanne Barbot de Villeneuve &bull; 1740</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus nisi, eget pulvinar in, molestie et arcu.</p>
+                <a href="#" class="btn btn-primary addToCartButton">Ajouter au panier</a>
+              </div>
+                             
+            </div>
+            
+            <div class="col-sm-3">
+ <div class="item-details">
+               <img class="card-img-top" src="http://interactivejoe.com/book-viewer/assets/images/bk_12-small.jpg">
+<h3 class="book-item_title">Rapunzel</h3>
+                <p class="author">by Friedrich Schulz &bull; 1812</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus nisi, eget pulvinar in, molestie et arcu.</p>
+                <a href="#" class="btn btn-primary addToCartButton">Ajouter au panier</a>
+              </div>
+                             
+             </div>
+        
+        </div>
+        
+      
+    </div>
+       
+       
+</body>
+
+</html>
